@@ -1,10 +1,21 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Pages
 import Index from "./pages/Index";
+import About from "./pages/About";
+import Features from "./pages/Features";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+
+// Dashboard Pages
+import Dashboard from "./pages/dashboard/Dashboard";
+import AiAssistant from "./pages/dashboard/AiAssistant";
 
 const queryClient = new QueryClient();
 
@@ -15,8 +26,18 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+          {/* Public Routes */}
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/about" element={<About />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          
+          {/* Dashboard Routes */}
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/ai-assistant" element={<AiAssistant />} />
+          
+          {/* 404 Route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
