@@ -1,8 +1,8 @@
-
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, CheckCheck, Leaf, LightbulbIcon, Target } from "lucide-react";
+import Users from "@/components/Users";
 
 const About = () => {
   return (

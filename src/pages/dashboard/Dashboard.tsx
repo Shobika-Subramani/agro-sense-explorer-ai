@@ -7,6 +7,9 @@ import { Progress } from "@/components/ui/progress";
 import { getCurrentUser } from "@/utils/auth";
 import { getDataRecommendations, getLatestSoilData, mockFarms } from "@/utils/data";
 import { BarChart2, Droplet, Eye, Leaf, Thermometer } from "lucide-react";
+import MapPin from "@/components/MapPin";
+import MessageSquare from "@/components/MessageSquare";
+import Calendar from "@/components/ui/calendar";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Link } from "react-router-dom";
 

@@ -4,7 +4,10 @@ import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { getCurrentUser, isAuthenticated } from "@/utils/auth";
-import { BarChart2, Calendar, Home, Leaf, MessageSquare, Settings, User, X } from "lucide-react";
+import { BarChart2, Calendar, Home, Leaf, Settings, User, X } from "lucide-react";
+import MapPin from "@/components/MapPin";
+import FileText from "@/components/FileText";
+import MessageSquare from "@/components/MessageSquare";
 import { useEffect, useState } from "react";
 import { Link, Navigate, useLocation } from "react-router-dom";
 
